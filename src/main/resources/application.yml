@@ -1,0 +1,25 @@
+server:
+  port: 8088 # 访问端口
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  # 连接mysql配置----------------------------------------------------------------------------------
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mybatisplus?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC  # 本地测试
+    #    url: jdbc:mysql://服务器ip地址:3306/zq_blog?useUnicode=true&characterEncoding=utf-8  # 上线环境
+    username: root
+    password: admin
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      field-strategy: not_empty
+      table-underline: true
+      db-type: mysql
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+  mapper-locations: classpath:/mapper/*/*.xml
