@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.clz.springboot.usermanager.mapper")
+@MapperScan("com.clz.springboot.usermanage.mapper")
 public class SpringbootMybatisplusApplication {
 
     public static void main(String[] args) {

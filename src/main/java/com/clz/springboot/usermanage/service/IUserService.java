@@ -1,6 +1,6 @@
-package com.clz.springboot.usermanager.service;
+package com.clz.springboot.usermanage.service;
 
-import com.clz.springboot.usermanager.entity.User;
+import com.clz.springboot.usermanage.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

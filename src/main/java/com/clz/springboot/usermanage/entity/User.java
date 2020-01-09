@@ -1,7 +1,9 @@
-package com.clz.springboot.usermanager.entity;
+package com.clz.springboot.usermanage.entity;
 
 import java.io.Serializable;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -9,22 +11,20 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- *
+ * 
  * </p>
  *
  * @author clz
  * @since 2020-01-08
  */
 @Data
-@TableName("user")
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
+@TableName("user")
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    /**
-     * id
-     */
+    @TableId(type = IdType.AUTO)
     private Integer id;
     /**
      * 姓名

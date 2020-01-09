@@ -104,8 +104,8 @@ public class CodeGenerator {
         //指定自定义模板路径，注意不要带上.ftl/.vm, 会根据使用的模板引擎自动识别
         // templateConfig.setEntity("templates/entity2.java");
         // templateConfig.setService();
-        // templateConfig.setController();
-
+       // templateConfig.setController("templates/controller.java");
+       // templateConfig.setEntity("templates/entity.java");
         templateConfig.setXml(null);
         mpg.setTemplate(templateConfig);
 

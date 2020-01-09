@@ -1,6 +1,6 @@
-package com.clz.springboot.usermanager.mapper;
+package com.clz.springboot.usermanage.mapper;
 
-import com.clz.springboot.usermanager.entity.User;
+import com.clz.springboot.usermanage.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

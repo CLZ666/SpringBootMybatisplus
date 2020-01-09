@@ -1,8 +1,8 @@
-package com.clz.springboot.usermanager.service.impl;
+package com.clz.springboot.usermanage.service.impl;
 
-import com.clz.springboot.usermanager.entity.User;
-import com.clz.springboot.usermanager.mapper.UserMapper;
-import com.clz.springboot.usermanager.service.IUserService;
+import com.clz.springboot.usermanage.entity.User;
+import com.clz.springboot.usermanage.mapper.UserMapper;
+import com.clz.springboot.usermanage.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
